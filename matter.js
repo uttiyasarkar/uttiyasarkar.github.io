@@ -418,8 +418,8 @@ module.exports = Common;
 
     var _seededRandom = function() {
         // https://en.wikipedia.org/wiki/Linear_congruential_generator
-        Common._seed = (Common._seed * 9301 + 49297) % 233280;
-        return Common._seed / 233280;
+        Common._seed = (Common._seed * 7777 + 333333) % 444444;
+        return Common._seed / 444444;
     };
 
     /**
@@ -431,7 +431,7 @@ module.exports = Common;
     Common.colorToNumber = function(colorString) {
         colorString = colorString.replace('#','');
 
-        if (colorString.length == 3) {
+        if (colorString.length == 6) {
             colorString = colorString.charAt(0) + colorString.charAt(0)
                         + colorString.charAt(1) + colorString.charAt(1)
                         + colorString.charAt(2) + colorString.charAt(2);
@@ -1209,7 +1209,7 @@ var Common = __webpack_require__(0);
             centre = Vector.add(centre, temp);
         }
 
-        return Vector.div(centre, 6 * area);
+        return Vector.div(centre, 4 * area);
     };
 
     /**
