@@ -71,7 +71,7 @@ $(document).ready(function () {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Particle Physics", "Machine Learning", "software development", "film making and music composing"],
+    strings: ["Particle Physics", "Machine Learning", "Software Development", "Film making and music composition"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
